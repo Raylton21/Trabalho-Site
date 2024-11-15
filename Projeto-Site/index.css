@@ -1,5 +1,3 @@
-
-
 body {
     color: white;
     background-color: black;
@@ -22,4 +20,16 @@ img {
 
 .center {
     text-align: center;
+}
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #fdfdfd;
+}
+
+.dark-mode .nav-link {
+    color: #ffffff;
 }

@@ -9,6 +9,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button id="toggleDarkMode" class="btn btn-secondary">Modo Escuro</button>
         <div class="container">
             <a class="navbar-brand" href="index.html">Meu Site</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -25,7 +26,7 @@
     </nav>
 <header>
     <div class="center">
-        <img src="satoru-gojo-reference-fanart-v0-e3zaq33rfn791.webp" width="400px" height="400px"></img>
+        <img src="https://preview.redd.it/satoru-gojo-reference-fanart-v0-e3zaq33rfn791.jpg?width=1080&crop=smart&auto=webp&s=3bdd2fbf44ed69231cdb671f2d43a8fa305a5a4a" width="400px" height="400px"></img>
     </div>
     <h1>
         Bem vindo ao meu site
@@ -45,5 +46,21 @@
     </div>
 </main>
 </div>
+<script>
+    const toggleButton = document.getElementById('toggleDarkMode');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+
+        // Altera o texto do botão conforme o modo
+        if (body.classList.contains('dark-mode')) {
+            toggleButton.innerText = 'Modo Claro';
+        } else {
+            toggleButton.innerText = 'Modo Escuro';
+        }
+    });
+</script>
+
 </body>
 </html>
